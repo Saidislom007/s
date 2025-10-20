@@ -17,6 +17,8 @@ const VoiceRecorder: React.FC = () => {
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const chunksRef = useRef<Blob[]>([]);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const isPlaying = false;
 
   // Timer effect
   useEffect(() => {
